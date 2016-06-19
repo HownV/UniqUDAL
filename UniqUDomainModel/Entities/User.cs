@@ -2,27 +2,33 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace UniqUDomainModel.Entities
 {
+    [DataContract]
     public class User
     {
         [Key]
         public Guid Id { get; set; }
 
         [Required, EmailAddress]
+        [DataMember]
         public string Email { get; set; }
 
+        [DataMember]
         public string FirstName { get; set; }
+        [DataMember]
         public string LastName { get; set; }
 
         [Required]
+        [DataMember]
         public string PasswordHash { get; set; } // encoding == Base64
 
         [Required]
-        public Guid AccessToken { get; set; }
+        public Guid TokenAccess { get; set; }
 
         public bool IsDeleted { get; set; }
 

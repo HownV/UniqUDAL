@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
 using UniqUDomainModel.Entities;
 
-namespace UniqUDbCreator
+namespace UniqUDbManager
 {
-    class DbInitializer : DropCreateDatabaseIfModelChanges<UniqUDbContex>
+    class DbInitializer : DropCreateDatabaseIfModelChanges<UniqUDbContext>
     {
-        protected override void Seed(UniqUDbContex context)
+        protected override void Seed(UniqUDbContext context)
         {
             context.StylesOfClothes.Add(new StyleOfClothing() { Name = "Business" });
             context.StylesOfClothes.Add(new StyleOfClothing() { Name = "Casual" });

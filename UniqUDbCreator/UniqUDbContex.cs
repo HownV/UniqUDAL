@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UniqUDbCreator.Configurations;
+﻿using System.Data.Entity;
+using UniqUDbManager.Configurations;
 using UniqUDomainModel.Entities;
 
-namespace UniqUDbCreator
+namespace UniqUDbManager
 {
-    class UniqUDbContex : DbContext
+    public class UniqUDbContext : DbContext
     {
-        public UniqUDbContex() : base("name=UniqUConnectionString")
+        public UniqUDbContext() : base("name=UniqUConnectionString")
         {
             Database.SetInitializer(new DbInitializer());
         }

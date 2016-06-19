@@ -6,21 +6,21 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 using UniqUDAL.DataTransferObjects;
+using UniqUDomainModel.Entities;
 
 namespace UniqUDAL
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IUniqUDataAccessService
+    public interface IDataAccessService
     {
 
         [OperationContract]
         string GetEcho(string echo);
 
-
-
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        User GetUser(string email);
+        
 
         // TODO: Add your service operations here
     }

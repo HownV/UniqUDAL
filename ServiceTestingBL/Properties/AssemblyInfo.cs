@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UniqUDbManager")]
+[assembly: AssemblyTitle("ServiceTestingBL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UniqUDbManager")]
+[assembly: AssemblyProduct("ServiceTestingBL")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("87a6764c-2fdb-424b-b843-ca1bf97dde41")]
+[assembly: Guid("cc0bb458-84c8-4038-8d08-9ef521fec4d7")]
 
 // Version information for an assembly consists of the following four values:
 //

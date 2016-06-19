@@ -5,9 +5,11 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqUDAL", "UniqUDAL\UniqUDAL.csproj", "{C5C48379-9FEC-4D42-AE2C-9280D56D28DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqUDbCreator", "UniqUDbCreator\UniqUDbCreator.csproj", "{87A6764C-2FDB-424B-B843-CA1BF97DDE41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqUDbManager", "UniqUDbCreator\UniqUDbManager.csproj", "{87A6764C-2FDB-424B-B843-CA1BF97DDE41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqUDomainModel", "UniqUDomainModel\UniqUDomainModel.csproj", "{B5BD4D57-2165-4505-A19B-0BB6FDCEB009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTestingBL", "ServiceTestingBL\ServiceTestingBL.csproj", "{CC0BB458-84C8-4038-8D08-9EF521FEC4D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B5BD4D57-2165-4505-A19B-0BB6FDCEB009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5BD4D57-2165-4505-A19B-0BB6FDCEB009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5BD4D57-2165-4505-A19B-0BB6FDCEB009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0BB458-84C8-4038-8D08-9EF521FEC4D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0BB458-84C8-4038-8D08-9EF521FEC4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0BB458-84C8-4038-8D08-9EF521FEC4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0BB458-84C8-4038-8D08-9EF521FEC4D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
