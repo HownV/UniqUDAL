@@ -4,7 +4,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UniqUDbCreator.DbEntities;
+using UniqUDomainModel.Entities;
 
 namespace UniqUDbCreator.Configurations
 {

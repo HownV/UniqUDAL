@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniqUDbCreator.DbEntities
+namespace UniqUDomainModel.Entities
 {
     public class Clothing
     {
@@ -17,7 +17,6 @@ namespace UniqUDbCreator.DbEntities
 
         public TypeOfClothing Type { get; set; }
         public StyleOfClothing Style { get; set; }
-        public CategoryOfClothing Category { get; set; }
         public int? Color { get; set; }
         public string Description { get; set; }
         public ICollection<string> PhotoUrlsList { get; set; }

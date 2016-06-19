@@ -1,27 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniqUDbCreator.DbEntities
+namespace UniqUDomainModel.Entities
 {
-    public class Set
+    public class Appointment // specific event in specific date with specific set of clothing
     {
         [Key]
         public Guid Id { get; set; }
-
         [Required]
-        public string Name { get; set; }
-
+        public Event Event { get; set; }
+        public DateTime DateTime { get; set; }
         public ICollection<Clothing> Clothes { get; set; }
 
-        [NotMapped]
-        public int CountOfClothing => Clothes.Count;
-
-        public Set()
+        public Appointment()
         {
             Clothes = new List<Clothing>();
         }

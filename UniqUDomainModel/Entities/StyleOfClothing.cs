@@ -5,14 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniqUDbCreator.DbEntities
+namespace UniqUDomainModel.Entities
 {
-    public class TypeOfClothing
+    public class StyleOfClothing
     {
-        [Key]
-        public Guid Id { get; set; }
-
-        [Required, MaxLength(50)]
+        [Key, MaxLength(50)]
         public string Name { get; set; }
     }
 }

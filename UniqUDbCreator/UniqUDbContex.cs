@@ -6,19 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UniqUDbCreator.Configurations;
-using UniqUDbCreator.DbEntities;
+using UniqUDomainModel.Entities;
 
 namespace UniqUDbCreator
 {
     class UniqUDbContex : DbContext
     {
-        public UniqUDbContex() : base("name=\"UniqUStringConnection\"")
+        public UniqUDbContex() : base("name=UniqUConnectionString")
         {
             Database.SetInitializer(new DbInitializer());
         }
 
         public DbSet<Appointment> Appointments { get; set; }
-        public DbSet<CategoryOfClothing> CategoryOfClothes { get; set; }
         public DbSet<Clothing> Clothes { get; set; }
         public DbSet<Event> Events { get; set; }
         public DbSet<Set> Sets { get; set; }

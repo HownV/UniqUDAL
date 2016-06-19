@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniqUDbCreator.DbEntities
+namespace UniqUDomainModel.Entities
 {
     public class User
     {

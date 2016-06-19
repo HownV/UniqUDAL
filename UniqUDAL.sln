@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqUDAL", "UniqUDAL\UniqUD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqUDbCreator", "UniqUDbCreator\UniqUDbCreator.csproj", "{87A6764C-2FDB-424B-B843-CA1BF97DDE41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqUDomainModel", "UniqUDomainModel\UniqUDomainModel.csproj", "{B5BD4D57-2165-4505-A19B-0BB6FDCEB009}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{87A6764C-2FDB-424B-B843-CA1BF97DDE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87A6764C-2FDB-424B-B843-CA1BF97DDE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87A6764C-2FDB-424B-B843-CA1BF97DDE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5BD4D57-2165-4505-A19B-0BB6FDCEB009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BD4D57-2165-4505-A19B-0BB6FDCEB009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BD4D57-2165-4505-A19B-0BB6FDCEB009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BD4D57-2165-4505-A19B-0BB6FDCEB009}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

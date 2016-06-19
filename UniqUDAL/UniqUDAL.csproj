@@ -61,15 +61,15 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service1.svc" />
+    <Content Include="DataAccessService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataTransferObjects\CompositeType.cs" />
-    <Compile Include="Service1.svc.cs">
-      <DependentUpon>Service1.svc</DependentUpon>
+    <Compile Include="DataAccessService.svc.cs">
+      <DependentUpon>DataAccessService.svc</DependentUpon>
     </Compile>
-    <Compile Include="ServiceContracts\IService1.cs" />
+    <Compile Include="ServiceContracts\IDataAccessService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +82,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniqUDomainModel\UniqUDomainModel.csproj">
+      <Project>{b5bd4d57-2165-4505-a19b-0bb6fdceb009}</Project>
+      <Name>UniqUDomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
