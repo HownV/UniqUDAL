@@ -23,12 +23,18 @@ namespace UniqUDAL
             return value;
         }
 
-        public User GetUser(string email)
+        public List<User> GetUser(string email)
         {
             var query = from user in _dbContext.Users
                         where user.Email == email
                         select user;
-            return query.SingleOrDefault();
+            return query.ToList();
+        }
+
+        public void AddUser(string email, string passwordHash)
+        {
+            _dbContext.Users.Add(new User(email, passwordHash));
+            _dbContext.SaveChanges();
         }
     }
 }

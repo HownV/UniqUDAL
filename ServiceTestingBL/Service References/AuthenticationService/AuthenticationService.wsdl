@@ -18,6 +18,12 @@
   <wsdl:message name="IAuthenticationService_AuthenticateWebSiteUser_OutputMessage">
     <wsdl:part name="parameters" element="tns:AuthenticateWebSiteUserResponse" />
   </wsdl:message>
+  <wsdl:message name="IAuthenticationService_RegisterNewUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterNewUser" />
+  </wsdl:message>
+  <wsdl:message name="IAuthenticationService_RegisterNewUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterNewUserResponse" />
+  </wsdl:message>
   <wsdl:portType name="IAuthenticationService">
     <wsdl:operation name="GetTokenAccessForMobileUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IAuthenticationService/GetTokenAccessForMobileUser" message="tns:IAuthenticationService_GetTokenAccessForMobileUser_InputMessage" />
@@ -26,6 +32,10 @@
     <wsdl:operation name="AuthenticateWebSiteUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IAuthenticationService/AuthenticateWebSiteUser" message="tns:IAuthenticationService_AuthenticateWebSiteUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAuthenticationService/AuthenticateWebSiteUserResponse" message="tns:IAuthenticationService_AuthenticateWebSiteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterNewUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuthenticationService/RegisterNewUser" message="tns:IAuthenticationService_RegisterNewUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuthenticationService/RegisterNewUserResponse" message="tns:IAuthenticationService_RegisterNewUser_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IAuthenticationService" type="tns:IAuthenticationService">
@@ -41,6 +51,15 @@
     </wsdl:operation>
     <wsdl:operation name="AuthenticateWebSiteUser">
       <soap:operation soapAction="http://tempuri.org/IAuthenticationService/AuthenticateWebSiteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterNewUser">
+      <soap:operation soapAction="http://tempuri.org/IAuthenticationService/RegisterNewUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

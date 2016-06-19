@@ -19,9 +19,10 @@ namespace UniqUDAL
         string GetEcho(string echo);
 
         [OperationContract]
-        User GetUser(string email);
-        
+        List<User> GetUser(string email);
 
-        // TODO: Add your service operations here
+        [OperationContract]
+        void AddUser(string email, string passwordHash);
+        
     }
 }

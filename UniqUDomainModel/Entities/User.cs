@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace UniqUDomainModel.Entities
 {
@@ -29,7 +31,7 @@ namespace UniqUDomainModel.Entities
 
         [Required]
         public Guid TokenAccess { get; set; }
-
+        
         public bool IsDeleted { get; set; }
 
         public ICollection<Clothing> Clothes { get; set; }
@@ -46,6 +48,20 @@ namespace UniqUDomainModel.Entities
 
         public User()
         {
+            Clothes = new List<Clothing>();
+            Sets = new List<Set>();
+            Events = new List<Event>();
+            Appointments = new List<Appointment>();
+        }
+
+        public User(string email, string passwordHash)
+        {
+            Id = Guid.NewGuid();
+            Email = email;
+            PasswordHash = passwordHash;
+            TokenAccess = Guid.NewGuid();
+            IsDeleted = false;
+
             Clothes = new List<Clothing>();
             Sets = new List<Set>();
             Events = new List<Event>();

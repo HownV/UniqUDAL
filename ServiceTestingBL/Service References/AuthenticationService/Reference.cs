@@ -26,6 +26,12 @@ namespace ServiceTestingBL.AuthenticationService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAuthenticationService/AuthenticateWebSiteUser", ReplyAction="http://tempuri.org/IAuthenticationService/AuthenticateWebSiteUserResponse")]
         System.Threading.Tasks.Task<bool> AuthenticateWebSiteUserAsync(string email, string passwordHash);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAuthenticationService/RegisterNewUser", ReplyAction="http://tempuri.org/IAuthenticationService/RegisterNewUserResponse")]
+        bool RegisterNewUser(string email, string passwordHash);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAuthenticationService/RegisterNewUser", ReplyAction="http://tempuri.org/IAuthenticationService/RegisterNewUserResponse")]
+        System.Threading.Tasks.Task<bool> RegisterNewUserAsync(string email, string passwordHash);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,6 +75,14 @@ namespace ServiceTestingBL.AuthenticationService {
         
         public System.Threading.Tasks.Task<bool> AuthenticateWebSiteUserAsync(string email, string passwordHash) {
             return base.Channel.AuthenticateWebSiteUserAsync(email, passwordHash);
+        }
+        
+        public bool RegisterNewUser(string email, string passwordHash) {
+            return base.Channel.RegisterNewUser(email, passwordHash);
+        }
+        
+        public System.Threading.Tasks.Task<bool> RegisterNewUserAsync(string email, string passwordHash) {
+            return base.Channel.RegisterNewUserAsync(email, passwordHash);
         }
     }
 }
